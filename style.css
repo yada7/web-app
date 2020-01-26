@@ -1,0 +1,257 @@
+body {
+        font-family:'roboto', sans-serif;
+        margin: 0;
+}
+h1 {
+    padding: 8px;
+    background: rgba(255,100, 255,0.8);
+    border-radius: 8px;
+    margin: 0;
+    font-size: 64px;
+    font-family: 'roboto slab';
+}
+p {
+    line-height: 1.5;
+}
+main{
+margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a :hover{
+    text-decoration: underline;
+}
+
+input,
+textarea{
+    height: 32px;
+    padding: 0 16px;
+    font-family: 'roboto condensed',sans-serif;
+    font-size: 20px;
+    border: none;
+    box-shadow: inset 8px 3px 18px -4px rgba(0, 0,0,0.4);
+}
+
+
+#banner {
+height: 80vh;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+background: rgba(0, 0,0,0.2)url('img/bl.jpg');
+background-size: cover;
+background-attachment: fixed;
+background-position: center;
+background-blend-mode: overlay;
+color: white;
+}
+
+#banner h3{
+    background: black;
+    border-radius: 8px;
+    padding: 0 24px;
+    font-size: 24px;
+}
+#searchbox{
+    position: fixed;
+    right: 0;
+    top: 24px;
+    width: 500px;
+    pointer-events: none;
+    z-index: 50;
+    transition: 0.4s;
+}
+#searchbox input{
+       height: 48px;
+       width: 100%;
+       
+    }
+    nav{
+        height: 72px;
+        background: #202125;
+        width:100%;
+        margin: 0;
+        position:fixed;
+        font-family: 'roboto condensed',sans-serif;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 16px 0 0;
+        box-sizing: border-box;
+        z-index: 100;
+    }
+nav a {
+padding: 0 32px;
+color: #eee;
+transition: 0.4s;
+}
+nav a:hover{
+
+    text-decoration: none;
+    color: yellowgreen;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+.active {
+    color: red;
+}
+
+#logo-image{
+display: left;
+height: 100%;
+background: black;
+padding: 0 32px;
+align-items: center;
+color: white;
+transition: .4s    
+}
+#logo-image img{
+    height: 100%;
+}
+
+#logo-image:hover{
+    background: olivedrab;
+}
+
+#slideout-menu{
+    display: none;
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.section-heading{
+    font-size: 32px;
+    font-family: roboto 'condensed',sans-serif;
+    border-left: 3px solid black;
+    border-radius: 3px solid black;
+    transition: all 0.4s;
+    display: inline-block;
+    padding: 4px 32px;
+
+
+}
+.section-heading:hover{
+    padding: 4px 48px;
+    background: rgb(228, 151, 151);
+}
+
+#section-source p{
+    padding: 8px;
+    text-align: center;
+
+}
+#section-source a{
+    margin: 8px;
+    text-align: center;
+
+}   
+
+.card-image{
+    transition: 0.4s;
+}
+.card-image:hover{
+    box-shadow: cadetblue;
+}
+.card .card-description{
+    padding: 0 8px;
+}
+.btn-readmore{
+    padding: 8px 24px;
+    border:2px solid darkblue;
+    font-weight: bolder;
+    cursor: pointer;
+    display: inline-block;
+    
+}
+
+footer{
+    background: black;
+    padding: 8px;
+    color: #eee;
+    display: flex;
+    height: 170px;
+    
+
+    
+
+}
+footer a{
+    color: white;
+}
+footer #left-footer{
+
+    flex: 1;
+    border-right: 1px solid white;
+    padding: left 320x;
+}
+footer #left-footer ul{
+
+    list-style: none;
+    border-right: 1px solid red;
+    padding: 0;
+    line-height: 1.5;
+
+}
+footer #right-footer{
+
+    flex: 2;
+    text-align: center;
+    padding: 8px;
+}
+footer #social-media-footer a .fa-facebook,
+footer #social-media-footer a .fa-twitter,
+footer #social-media-footer a .fa-youtube{
+    color: white;
+    transition: 0.4s;   
+}
+footer #social-media-footer ul{
+display: flex;
+list-style: none;
+justify-content:center;
+padding: 0;
+}
+
+footer #social-media-footer ul li{
+    font-size: 45px;
+    padding: 16px;
+    transition: 0.4s;
+}
+footer #social-media-footer ul li:hover a .fa-facebook{
+    color:blue;
+}
+footer #social-media-footer ul li:hover a .fa-twitter{
+    color: cornflowerblue;
+}
+footer #social-media-footer ul li:hover a .fa-youtube{
+    color: crimson;
+}
+
+@media(min-width:720px){
+   main{ 
+       width: 95%;
+   }
+   .card{
+       width: 40%;
+   }
+   .card .card-image img{
+       width: 70%;
+   }
+}
+@media(min-width:1200px){
+    main{ 
+        width: 85%;
+    }
+   
+ }
